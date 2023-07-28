@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Big+Shoulders+Display');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+}
+
+.car-category {
+    width: 14.1875rem;
+    height: 21.375rem;
+    color: white;
+    padding: 3rem;
+}
+
+.car-category:first-child {
+    border-radius: 0.375rem 0.375rem 0 0;
+}
+
+.car-category:last-child {
+    border-radius: 0 0 0.375rem 0.375rem;
+}
+
+.category-header {
+    height: 4.25rem;
+}
+
+#cat-sedan-header {
+    background: url("./images/icon-sedans.svg") no-repeat;
+}
+
+#cat-suv-header {
+    background: url("./images/icon-suvs.svg") no-repeat;
+}
+
+#cat-luxury-header {
+    background: url("./images/icon-luxury.svg") no-repeat;
+}
+
+.car-category > h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin: 0.875rem 0;
+}
+
+.car-category > p, .car-category > a {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+}
+
+.car-category > p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.car-category > a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 1.75rem;
+    padding: 0.875rem 2rem;
+    border-radius: 1.5rem;
+}
+
+#cat-sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#cat-suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#cat-luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+#cat-sedan > a {
+    color: hsl(31, 77%, 52%);
+}
+
+#cat-suv > a {
+    color: hsl(184, 100%, 22%);
+}
+
+#cat-luxury > a {
+    color: hsl(179, 100%, 13%);
+}
+
+.car-category > a:hover {
+    background-color: hsla(0, 0%, 100%, 0%);
+    color: hsla(0, 0%, 95%) !important;
+    outline: 3px solid hsla(0, 0%, 95%);
+    outline-offset: -3px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 960px) {
+    .wrapper {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .car-category {
+        width: 12.9375rem;
+        height: 25rem;
+    }
+
+    .car-category:first-child {
+        border-radius: 0.375rem 0 0 0.375rem;
+    }
+    
+    .car-category:last-child {
+        border-radius: 0 0.375rem 0.375rem 0;
+    }
+
+    .car-category > a {
+        margin-top: 5.5rem;
+    }
+}
