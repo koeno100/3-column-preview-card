@@ -43,8 +43,6 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 This was a the first challenge which required me to change the orientation of the three boxes from column on mobile to row on desktop. It's a valuable technique to know, since there will probably be plenty of situations where I have to apply this to make content fit a mobile device.
